@@ -8,7 +8,7 @@ const submitButton = document.querySelector('[type="submit"]');
 
 addEventListener('DOMContentLoaded', checkLocalStorage);
 form.addEventListener('input', _.throttle(addDataToStorageFromForm, 500));
-submitButton.addEventListener('click', submitForm);
+form.addEventListener('submit', submitForm);
 
 function addItemInLocalStorage(key, value) {
   const payload = JSON.stringify(value);
