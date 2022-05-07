@@ -8,4 +8,4 @@ var t=arguments[3];!function t(e,o,i){function n(a,r){if(!o[a]){if(!e[a]){var l=
 },{}],"TfQ5":[function(require,module,exports) {
 "use strict";var e=require("./gallery-items.js");require("simplelightbox/dist/simple-lightbox.min.css"),require("simplelightbox/dist/simple-lightbox.min.js");const i=document.querySelector(".gallery");function t({preview:e,original:i,description:t}){return`<div class="gallery__item">\n    <a class="gallery__link" href="${i}">\n      <img\n        class="gallery__image"\n        src="${e}"\n        data-source="${i}"\n        alt="${t}"\n      />\n    </a>\n  </div>`}const l=e.galleryItems.map(t).join("");function n(e){const i=e.target;if("IMG"!==i.nodeName)return;e.preventDefault();i.dataset.source,new SimpleLightbox(".gallery a",function(){i.alt})}i.insertAdjacentHTML("afterbegin",l),i.addEventListener("click",n),console.log(e.galleryItems);
 },{"./gallery-items.js":"q5Rn","simplelightbox/dist/simple-lightbox.min.css":"kz9M","simplelightbox/dist/simple-lightbox.min.js":"DOTs"}]},{},["TfQ5"], null)
-//# sourceMappingURL=/goit-js-hw-08/01-gallery.815734b2.js.map
+//# sourceMappingURL=/goit-js-hw-08/01-gallery.1d238439.js.map
